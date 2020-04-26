@@ -39,7 +39,7 @@ for root, dirs, files in os.walk(temp_dir, topdown=False):
 for removable in remove_us:
     os.remove(removable)
 
-thing = parent_path + '/output.zip'
-make_archive(temp_dir, thing)
+output_path = parent_path + '/lambda_s3_ses_v1-1.zip'
+make_archive(temp_dir, output_path)
 # output_zip = parent_path + '/output.zip'
 # make_archive(parent_path, output_zip)
