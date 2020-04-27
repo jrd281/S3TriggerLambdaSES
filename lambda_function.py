@@ -20,6 +20,7 @@ email_to = os.environ['EMAIL_TO']
 current_datetime = datetime.datetime.now(tz=environ_timezone)
 current_datetime_fmt = current_datetime.strftime("%Y-%m-%d %H:%M")
 
+print(current_datetime_fmt)
 
 # https://github.com/thigley986/Lambda-AWS-SES-Send-Email/blob/master/SendEmail.py
 def lambda_handler(event, context):
